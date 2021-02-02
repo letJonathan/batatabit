@@ -23,16 +23,18 @@
     --color-warm-black: #201E1C;
     --color-warm-black-plus: #282623;
     --color-grey: #BABABA;
+    --color-grey-dark: #757575;
     --color-off-white: #FAF8F7;
     --color-just-white: #FFFFFF;
-
+    --color-text-table: #B5B0AC;
+    --color-currency-orange: #FF9536;
 }
 
 body {
     font-family: 'DM Sans', sans-serif, Arial;
 }
 
-header, main, footer {
+header, section, footer {
     padding: 0 var(--general-padding);
 }
 
@@ -90,4 +92,92 @@ img {
 
 .header_cta-img {
     margin-left: 8px;
+}
+
+.about {
+    background-color: var(--color-off-white);
+}
+
+.about_img {
+    display: block;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+.about_subtitle {
+    margin-bottom: 1.5rem;
+}
+
+.about_text {
+    font-weight: 500;
+    color: var(--color-grey-dark);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about_currency {
+    margin: 3rem auto 0.75rem auto;
+    width: 60%;
+    color: var(--color-currency-orange);
+    max-width: 300px;
+}
+
+.table {
+    --border-radius: 8px;
+    max-width: 500px;
+    min-width: 230px;
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+}
+
+.table_container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.table_d {
+    background-color: var(--color-just-white);
+    border: 1px solid var(--color-off-white);
+    padding: 0.625rem 0.75rem;
+    display: inline-block;
+    width: 50%;
+}
+
+.table_img-trend {
+    margin-left: 10px;
+}
+
+.table tr td:first-child {
+    color: var(--color-text-table);
+} 
+
+.table tr td:nth-child(2) {
+    color: var(--color-grey-dark);
+} 
+
+.table tr:first-child td:first-child {
+    border-radius: var(--border-radius) 0 0 0;
+}
+
+.table tr:first-child td:nth-child(2) {
+    border-radius: 0 var(--border-radius) 0 0;
+}
+
+.table tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--border-radius);
+}
+
+.table tr:last-child td:nth-child(2) {
+    border-radius: 0 0 var(--border-radius) 0;
+}
+
+.table_right-arrow {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
 }

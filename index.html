@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Batatabit - Landing Page</title>
   </head>
@@ -26,12 +23,75 @@
       <p class="header_text tac">
         Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
       </p>
-      <button class="header_cta">Conoce Nuestros Planes
-          <img class="header_cta-img" src="./assets/icons/down-arrow.svg" alt="Icono Flecha Abajo - Batatabit">
+      <button class="header_cta">
+        Conoce Nuestros Planes
+        <img
+          class="header_cta-img"
+          src="./assets/icons/down-arrow.svg"
+          alt="Icono Flecha Abajo - Batatabit"
+        />
       </button>
     </header>
     <main class="main">
-      <section class="about"></section>
+      <section class="about">
+        <img
+          class="about_img"
+          src="./assets/img/Bitcoin.svg"
+          alt="Bitcoin - Batatabit"
+        />
+        <h2 class="about_subtitle tac">
+          Visibilizamos todas las tasas de cambio.
+        </h2>
+        <p class="about_text tac">
+          Traemos información en tiempo real de las casas de cambio y las
+          monedas más importantes del mundo.
+        </p>
+        <h3 class="about_currency">Monedas</h3>
+        <div class="table_container">
+          <table class="table">
+            <tr class="table_r">
+              <td class="table_d">Bitcoin</td>
+              <td class="table_d">
+                $ 1.96
+                <img
+                  class="table_img-trend" src="./assets/icons/trending-down.svg"
+                  alt="Bitcoin tendencia a la baja - Batatabit"
+                />
+              </td>
+            </tr>
+            <tr class="table_r">
+              <td class="table_d">Ethereum</td>
+              <td class="table_d">
+                $ 0.07
+                <img
+                  class="table_img-trend" src="./assets/icons/trending-up.svg"
+                  alt="Bitcoin tendencia a la baja - Batatabit"
+                />
+              </td>
+            </tr><tr class="table_r">
+              <td class="table_d">Ripple</td>
+              <td class="table_d">
+                $ 2.15
+                <img
+                  class="table_img-trend" src="./assets/icons/trending-down.svg"
+                  alt="Bitcoin tendencia a la baja - Batatabit"
+                />
+              </td>
+            </tr>
+            <tr class="table_r">
+              <td class="table_d">Stellar</td>
+              <td class="table_d">
+                $ 4.96
+                <img
+                  class="table_img-trend" src="./assets/icons/trending-down.svg"
+                  alt="Bitcoin tendencia a la baja - Batatabit"
+                />
+              </td>
+            </tr>
+          </table>
+          <img class="table_right-arrow" src="./assets/icons/right-arrow.svg" alt="">
+        </div>
+      </section>
       <section class="features"></section>
       <section class="hero"></section>
       <section class="prices"></section>
