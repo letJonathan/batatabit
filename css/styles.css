@@ -5,16 +5,20 @@
 *:after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 :root {
+
+    /* FONTS */
+
     --font-h1-mobile: 1.5rem;
     --font-h2-mobile: 0.875rem;
     --line-height-h2: 1.125rem;
     --line-height-h1: 1.625rem;
-    --general-padding: 1rem;
     
+    /* COLORS */
+
     --header-linear-bg: 207.8deg, #201E1C 16.69%, #F7931A 100%;
     --color-bitcoin-orange: #F7931A;
     --color-soft-orange: #FFE9D5;
@@ -28,6 +32,12 @@
     --color-just-white: #FFFFFF;
     --color-text-table: #B5B0AC;
     --color-currency-orange: #FF9536;
+
+    /* CALCS */
+
+    --general-padding: 1rem;
+    --width-with-padding: calc(100vw - (var(--general-padding) * 2));
+
 }
 
 body {
@@ -117,9 +127,11 @@ img {
 
 .about_currency {
     margin: 3rem auto 0.75rem auto;
-    width: 60%;
+    max-width: 350px;
     color: var(--color-currency-orange);
-    max-width: 300px;
+    min-width: 230px;
+    width: 70%;
+    padding-left: 2px;
 }
 
 .table {
@@ -177,7 +189,7 @@ img {
 
 .table_right-arrow {
     position: absolute;
-    right: .25rem;
+    left: 95%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -191,6 +203,12 @@ img {
     overflow: hidden;
 }
 
+@media screen and (min-width: 375px){
+    .table_right-arrow {
+        left: 90%;
+    }
+}
+
 .table_text {
     font-size: 0.75rem;
     font-family: 'Inter', sans-serif;
@@ -200,11 +218,29 @@ img {
     color: var(--color-secondary-blue);
 }
 
-
-.table_btn-check-1:checked ~ .table_2 {
-    background: red;
+.table_1, .table_2 {
+    width: var(--width-with-padding)
 }
 
-.table_btn-check-2:checked ~ .table_1 {
-    background: red;
+.table_btn-check {
+    width: 0;
+    height: 0;
+}
+
+.table_btn-check ~ .about_carrousel {
+    transform: translateX(0);
+}
+
+.table_btn-check:checked ~ .about_carrousel {
+    transform: translateX(-100%);
+}
+
+.about_container-tables {
+    overflow: hidden;
+}
+
+.about_carrousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: var(--width-with-padding);
 }
