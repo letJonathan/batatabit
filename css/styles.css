@@ -136,18 +136,16 @@ img {
 
 .table {
     --border-radius: 8px;
-    max-width: 500px;
+    max-width: 400px;
     min-width: 230px;
     width: 70%;
-    margin: 0 auto;
     border-collapse: collapse;
     font-family: 'Inter', sans-serif;
-    margin: 0 auto;
 }
 
 .table_container {
     position: relative;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -169,6 +167,7 @@ img {
 
 .table tr td:nth-child(2) {
     color: var(--color-grey-dark);
+    text-align: right;
 } 
 
 .table tr:first-child td:first-child {
@@ -189,7 +188,7 @@ img {
 
 .table_right-arrow {
     position: absolute;
-    left: 95%;
+    left: calc(100% - 4px);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -197,16 +196,11 @@ img {
 .table_update-date {
     background-color: var(--color-soft-orange);
     padding: .5rem;
-    margin: 1.5rem auto 4.5rem auto;
+    margin: 1.5rem 0 4.5rem 0;
+    
     max-width: 200px;
     border-radius: 8px;
     overflow: hidden;
-}
-
-@media screen and (min-width: 375px){
-    .table_right-arrow {
-        left: 90%;
-    }
 }
 
 .table_text {
@@ -219,7 +213,8 @@ img {
 }
 
 .table_1, .table_2 {
-    width: var(--width-with-padding)
+    width: calc(var(--width-with-padding) - var(--general-padding));
+    max-width: 250px;
 }
 
 .table_btn-check {
@@ -227,20 +222,38 @@ img {
     height: 0;
 }
 
+.table_2 .table {
+    margin: 0 0 0 auto;
+}
+
+.table_2 .table_update-date {
+    margin-left: auto;
+}
+
 .table_btn-check ~ .about_carrousel {
-    transform: translateX(0);
+    /* transform: translateX(0); */
 }
 
 .table_btn-check:checked ~ .about_carrousel {
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
+}
+
+.about_carrousel {
+    overflow: scroll;
+}
+
+.about_carrousel::-webkit-scrollbar {
+    display: none;
 }
 
 .about_container-tables {
-    overflow: hidden;
+    overflow: scroll;
+    width: 260px;
+    margin: 0 auto;
 }
 
 .about_carrousel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: var(--width-with-padding);
+    width: 500px;
 }
