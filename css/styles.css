@@ -338,7 +338,7 @@ html {
 }
 
 .hero {
-    height: 120vw;
+    height: 50vh;
     width: 100%;
     background-image: url(./../assets/img/bitcoinbaby.jpg);
     background-repeat: no-repeat;
@@ -547,6 +547,22 @@ html {
     .header_title {
         width: 600px;
         margin: 1rem auto;
+    }
+
+    .about_container-tables {
+        width: 500px;
+    }
+    
+    .table_right-arrow, .prices_btn {
+        display: none;
+    }
+
+    .table {
+        width: 95%;
+    }
+
+    .prices_scroller, .prices_box-cards {
+        width: 616px;
     }
 }
 
