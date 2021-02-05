@@ -330,3 +330,17 @@ img {
     font-size: 0.875rem;
     line-height: 18px;
 }
+
+.hero {
+    height: 120vw;
+    width: 100%;
+    background-image: url(./../assets/img/bitcoinbaby.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero_subtitle {
+    padding-top: 4rem;
+    color: var(--color-just-white);
+}
