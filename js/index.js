@@ -17,3 +17,8 @@ btn.addEventListener('click', event => {
     console.error('Error al detectar la clase .go-right|.go-left en #btn-check')
   }
 })
+
+
+const pricesContainer = document.getElementById('prices-container')
+
+pricesContainer.scroll(143,0)

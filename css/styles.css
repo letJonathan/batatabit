@@ -359,3 +359,121 @@ img {
 .prices_text {
     margin-bottom: 3.125rem;
 }
+
+.prices_cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: .5rem;
+}
+
+
+
+.prices_card {
+    position: relative;
+    background-color: var(--color-just-white);
+    width: 200px;
+    padding: 32px 20px 24px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.prices_highlight {
+    --height: 32px;
+    position: absolute;
+    height: var(--height);
+    top: calc(var(--height) / 2 * -1);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background-color: var(--color-bitcoin-orange);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-just-white);
+    border-radius: 8px;
+}
+
+.prices_card-title {
+    margin-bottom: .5rem;
+}
+
+.prices_amount-price, .prices_description {
+    margin-bottom: 1rem;
+}
+
+.prices_amount-price {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 3.25rem;
+    line-height: 3.9375rem;
+    letter-spacing: -0.08em;
+}
+
+.prices_description {
+    color: var(--color-grey-dark);
+    font-size: 0.75rem;
+    line-height: .9375rem;
+    font-weight: 500    ;
+}
+
+.prices_cta {
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 0.9375rem 1rem;
+    font-size: .875rem;
+    margin-right: .5rem;
+}
+
+.prices_btn-arrow {
+    margin-left: .5rem;
+}
+
+.prices_box-cards {
+    overflow-y: scroll;
+    height: 300px;
+    width: 330px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.prices_scroller {
+    height: 300px;
+    width: 330px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.prices_box-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.prices_btn {
+    position: absolute;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-180deg);
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    background-image: url(./../assets/icons/right-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+    background-color: #eaeaea;
+    opacity: .5;
+}
+
+.prices_btn.right {
+    left: inherit;
+    right: .5rem;
+    transform: rotate(0deg);
+}
