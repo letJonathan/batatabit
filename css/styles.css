@@ -344,3 +344,18 @@ img {
     padding-top: 4rem;
     color: var(--color-just-white);
 }
+
+.prices {
+    background-color: var(--color-off-white);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.prices_subtitle {
+    color: var(--color-warm-black);
+    margin-bottom: 1.5rem;
+}
+
+.prices_text {
+    margin-bottom: 3.125rem;
+}
