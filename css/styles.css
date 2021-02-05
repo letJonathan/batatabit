@@ -83,7 +83,7 @@ img {
 
 .header_cta {
     --height-button: 3rem;
-    --width: 220px;
+    --width: 230px;
     position: absolute;
     display: block;
     padding: 1rem;
@@ -276,3 +276,12 @@ img {
     grid-template-columns: repeat(2, 1fr);
     width: 500px;
 }
+
+.logo-separator {
+    height: 25px;
+    width: 41px;
+    margin: 0 auto;
+    background-color: red;
+    background-image: url('./../assets/icons/batata.svg');
+    background-size: contain;
+}   
