@@ -83,7 +83,7 @@ img {
 
 .header_cta {
     --height-button: 3rem;
-    --width: 230px;
+    --width: 220px;
     position: absolute;
     display: block;
     padding: 1rem;
@@ -126,10 +126,10 @@ img {
 }
 
 .about_currency {
-    margin: 3rem auto 0.75rem auto;
+    margin: 3rem 0 0.75rem 0;
     max-width: 350px;
     color: var(--color-currency-orange);
-    min-width: 230px;
+    min-width: 220px;
     width: 70%;
     padding-left: 2px;
 }
@@ -137,7 +137,7 @@ img {
 .table {
     --border-radius: 8px;
     max-width: 400px;
-    min-width: 230px;
+    min-width: 220px;
     width: 70%;
     border-collapse: collapse;
     font-family: 'Inter', sans-serif;
@@ -187,10 +187,26 @@ img {
 }
 
 .table_right-arrow {
+    --percent-left: 100%;
+    --rotate: 0;
     position: absolute;
-    left: calc(100% - 4px);
+    left: calc(var(--percent-left) - 20px);
     top: 50%;
     transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    z-index: 1;
+}
+
+.table_right-arrow img {
+    transform: rotate(var(--rotate));
 }
 
 .table_update-date {
@@ -210,6 +226,7 @@ img {
 
 .about_currency.blue {
     color: var(--color-secondary-blue);
+    text-align: right;
 }
 
 .table_1, .table_2 {
@@ -230,27 +247,29 @@ img {
     margin-left: auto;
 }
 
-.table_btn-check ~ .about_carrousel {
-    /* transform: translateX(0); */
+
+
+.go-right {
+    --percent-left: 100%;
+    --rotate: 0;
 }
 
-.table_btn-check:checked ~ .about_carrousel {
-    /* transform: translateX(-100%); */
+.go-left {
+    --percent-left: 109%;
+    --rotate: -180deg;
 }
 
-.about_carrousel {
-    overflow: scroll;
-}
-
-.about_carrousel::-webkit-scrollbar {
-    display: none;
-}
 
 .about_container-tables {
     overflow: scroll;
     width: 260px;
     margin: 0 auto;
 }
+
+.about_container-tables::-webkit-scrollbar {
+    display: none;
+}
+
 
 .about_carrousel {
     display: grid;

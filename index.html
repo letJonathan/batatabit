@@ -50,9 +50,7 @@
           monedas más importantes del mundo.
         </p>
 
-        <div class="about_container-tables">
-
-          <input class="table_btn-check" type="checkbox" id="btn-check"  />
+        <div class="about_container-tables" id="carrousel-scroller">
 
           <div class="about_carrousel">
             <div class="table_1">
@@ -105,14 +103,15 @@
                       />
                     </td>
                   </tr>
-                </table>
-                <label for="btn-check">
+                </table>  
+
+                <button id="btn-check" class="table_right-arrow go-right">
                   <img
-                    class="table_right-arrow"
+                    class=""
                     src="./assets/icons/right-arrow.svg"
                     alt="Icono tendencia a la alza"
                   />
-                </label>
+                </button>
   
                 <div class="table_update-date">
                   <p class="table_text tac">
@@ -192,5 +191,6 @@
       <section class="prices"></section>
     </main>
     <footer class="footer"></footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
