@@ -20,5 +20,28 @@ btn.addEventListener('click', event => {
 
 
 const pricesContainer = document.getElementById('prices-container')
+const pricesBtnLeft = document.getElementById('prices-btn-left')
+const pricesBtnRight = document.getElementById('prices-btn-right')
 
 pricesContainer.scroll(143,0)
+
+pricesBtnLeft.addEventListener('click', event => {
+  const scrollX = pricesContainer.scrollLeft
+  console.log(scrollX)
+  if (scrollX == 0) {
+    return false
+  } else if (scrollX < 205) {
+    pricesContainer.scroll(0,0)
+  } else if (scrollX > 205) {
+    pricesContainer.scroll(143,0)
+  }
+})
+
+pricesBtnRight.addEventListener('click', event => {
+  const scrollX = pricesContainer.scrollLeft
+  if (scrollX == 0) {
+    pricesContainer.scroll(143,0)
+  } else if (scrollX > 142) {
+    pricesContainer.scroll(286,0)
+  }
+})
