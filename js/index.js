@@ -27,7 +27,6 @@ pricesContainer.scroll(143,0)
 
 pricesBtnLeft.addEventListener('click', event => {
   const scrollX = pricesContainer.scrollLeft
-  console.log(scrollX)
   if (scrollX == 0) {
     return false
   } else if (scrollX < 205) {
@@ -42,6 +41,6 @@ pricesBtnRight.addEventListener('click', event => {
   if (scrollX == 0) {
     pricesContainer.scroll(143,0)
   } else if (scrollX > 142) {
-    pricesContainer.scroll(286,0)
+    pricesContainer.scroll(999,0)
   }
 })

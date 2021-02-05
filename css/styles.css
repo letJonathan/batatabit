@@ -57,6 +57,10 @@ img {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     background-image: linear-gradient(var(--header-linear-bg));
     padding-bottom: 3.75rem;
@@ -99,6 +103,8 @@ img {
     background-color: var(--color-off-white);
     font-weight: bold;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    color: var(--color-warm-black);
+    text-decoration: none;
 }
 
 .header_cta-img {
@@ -491,4 +497,62 @@ img {
     left: inherit;
     right: .5rem;
     transform: rotate(0deg);
+}
+
+
+.footer {
+    background-color: var(--color-bitcoin-orange);
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: var(--general-padding);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer_link-item {
+    display: block;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_link-item {
+    color: var(--color-just-white);
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+
+.footer_link-item:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+    .features_boxs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        background-image: url('./../assets/img/bitcoinbaby2x.jpg');
+    }
+
+    .header_title {
+        width: 600px;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .features_boxs {
+        width: 800px;
+        margin: 0 auto;
+    }
 }
