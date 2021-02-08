@@ -1,322 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter&display=swap"
-      rel="stylesheet" 
-      media="all"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter&display=swap"
+    rel="stylesheet"
+    media="all"
     />
-    <meta name="description" content="Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.">
-    <link rel="stylesheet" href="./css/styles.css" media="all"/>
+    <meta
+    name="description"
+    content="Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo."
+    />
+    <link rel="stylesheet" href="./css/styles.css" media="all" />
     <title>Batatabit - Landing Page</title>
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
-      <div class="header_logo">
-        <img
-          class="header_logo-img"
-          src="./assets/img/logo.svg"
-          alt="Logo Batatabit"
-        />
-      </div>
-      <h1 class="header_title tac">
-        La próxima revolución en el intercambio de criptomonedas.
-      </h1>
-      <p class="header_text tac">
-        Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
-      </p>
-      <a class="header_cta" href="#planes">
-        Conoce Nuestros Planes
-        <img
-          class="header_cta-img"
-          src="./assets/icons/down-arrow.svg"
-          alt="Icono Flecha Abajo - Batatabit"
-        />
-      </a>
+        <div class="header_logo">
+            <img
+            class="header_logo-img"
+            src="./assets/img/logo.svg"
+            alt="Logo Batatabit"
+            />
+        </div>
+        <h1 class="header_title tac">
+            La próxima revolución en el intercambio de criptomonedas.
+        </h1>
+        <p class="header_text tac">
+            Batatabit te ayuda a navegar entre los diferentes precios y
+            tendencias.
+        </p>
+        <a class="header_cta" href="#planes">
+            Conoce Nuestros Planes
+            <img
+            class="header_cta-img"
+            src="./assets/icons/down-arrow.svg"
+            alt="Icono Flecha Abajo - Batatabit"
+            />
+        </a>
     </header>
     <main class="main">
-      <section class="about">
-        <img
-          class="about_img"
-          src="./assets/img/Bitcoin.svg"
-          alt="Bitcoin - Batatabit"
-        />
-        <h2 class="about_subtitle tac">
-          Visibilizamos todas las tasas de cambio.
-        </h2>
-        <p class="about_text tac">
-          Traemos información en tiempo real de las casas de cambio y las
-          monedas más importantes del mundo.
-        </p>
-
-        <div class="about_container-tables" id="carrousel-scroller">
-          <div class="about_carrousel">
-            <div class="table_1">
-              <h3 class="about_currency">Monedas</h3>
-
-              <div class="table_container first-table">
-                <table class="table">
-                  <tr class="table_r">
-                    <td class="table_d">Bitcoin</td>
-                    <td class="table_d">
-                      $ 1.96
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-down.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                  <tr class="table_r">
-                    <td class="table_d">Ethereum</td>
-                    <td class="table_d">
-                      $ 0.07
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-up.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                  <tr class="table_r">
-                    <td class="table_d">Ripple</td>
-                    <td class="table_d">
-                      $ 2.15
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-down.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                  <tr class="table_r">
-                    <td class="table_d">Stellar</td>
-                    <td class="table_d">
-                      $ 4.96
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-down.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                </table>
-
-                <button id="btn-check" class="table_right-arrow go-right">
-                  <img
-                    class=""
-                    src="./assets/icons/right-arrow.svg"
-                    alt="Icono tendencia a la alza"
-                  />
-                </button>
-
-                <div class="table_update-date">
-                  <p class="table_text tac">
-                    <b class="table_bold">Actualizado:</b> 19 Julio 23:45
-                  </p>
+        <section class="about">
+            <img
+            class="about_img"
+            src="./assets/img/Bitcoin.svg"
+            alt="Bitcoin - Batatabit"
+            />
+            <h2 class="about_subtitle tac">
+                Visibilizamos todas las tasas de cambio.
+            </h2>
+            <p class="about_text tac">
+                Traemos información en tiempo real de las casas de cambio y
+                las monedas más importantes del mundo.
+            </p>
+            
+            <div class="about_container-tables" id="carrousel-scroller">
+                <div class="about_carrousel">
+                    <div class="table_1">
+                        <h3 class="about_currency">Monedas</h3>
+                        
+                        <div class="table_container first-table">
+                            <table class="table">
+                                <tr class="table_r">
+                                    <td class="table_d">Bitcoin</td>
+                                    <td class="table_d">
+                                        $ 1.96
+                                        <img
+                                        class="table_img-trend"
+                                        src="./assets/icons/trending-down.svg"
+                                        alt="Bitcoin tendencia a la baja - Batatabit"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr class="table_r">
+                                    <td class="table_d">Ethereum</td>
+                                    <td class="table_d">
+                                        $ 0.07
+                                        <img
+                                        class="table_img-trend"
+                                        src="./assets/icons/trending-up.svg"
+                                        alt="Bitcoin tendencia a la baja - Batatabit"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr class="table_r">
+                                    <td class="table_d">Ripple</td>
+                                    <td class="table_d">
+                                        $ 2.15
+                                        <img
+                                        class="table_img-trend"
+                                        src="./assets/icons/trending-down.svg"
+                                        alt="Bitcoin tendencia a la baja - Batatabit"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr class="table_r">
+                                    <td class="table_d">Stellar</td>
+                                    <td class="table_d">
+                                        $ 4.96
+                                        <img
+                                        class="table_img-trend"
+                                        src="./assets/icons/trending-down.svg"
+                                        alt="Bitcoin tendencia a la baja - Batatabit"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <button
+                            id="btn-check"
+                            class="table_right-arrow go-right"
+                            >
+                            <img
+                            class=""
+                            src="./assets/icons/right-arrow.svg"
+                            alt="Icono tendencia a la alza"
+                            />
+                        </button>
+                        
+                        <div class="table_update-date">
+                            <p class="table_text tac">
+                                <b class="table_bold">Actualizado:</b>
+                                19 Julio 23:45
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="table_2">
-              <h3 class="about_currency blue">Comisiones</h3>
-
-              <div class="table_container second-table">
-                <table class="table">
-                  <tr class="table_r">
-                    <td class="table_d">Bitrade</td>
-                    <td class="table_d">
-                      $ 12.96
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-down.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                  <tr class="table_r">
-                    <td class="table_d">Bitpreco</td>
-                    <td class="table_d">
-                      $ 13.07
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-up.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                  <tr class="table_r">
-                    <td class="table_d">Novadax</td>
-                    <td class="table_d">
-                      $ 13.15
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-down.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                  <tr class="table_r">
-                    <td class="table_d">Coinext</td>
-                    <td class="table_d">
-                      $ 14.96
-                      <img
-                        class="table_img-trend"
-                        src="./assets/icons/trending-down.svg"
-                        alt="Bitcoin tendencia a la baja - Batatabit"
-                      />
-                    </td>
-                  </tr>
-                </table>
-                <div class="table_update-date">
-                  <p class="table_text tac">
-                    <b class="table_bold">Actualizado:</b> 19 Julio 23:48
-                  </p>
+                
+                <div class="table_2">
+                    <h3 class="about_currency blue">Comisiones</h3>
+                    
+                    <div class="table_container second-table">
+                        <table class="table">
+                            <tr class="table_r">
+                                <td class="table_d">Bitrade</td>
+                                <td class="table_d">
+                                    $ 12.96
+                                    <img
+                                    class="table_img-trend"
+                                    src="./assets/icons/trending-down.svg"
+                                    alt="Bitcoin tendencia a la baja - Batatabit"
+                                    />
+                                </td>
+                            </tr>
+                            <tr class="table_r">
+                                <td class="table_d">Bitpreco</td>
+                                <td class="table_d">
+                                    $ 13.07
+                                    <img
+                                    class="table_img-trend"
+                                    src="./assets/icons/trending-up.svg"
+                                    alt="Bitcoin tendencia a la baja - Batatabit"
+                                    />
+                                </td>
+                            </tr>
+                            <tr class="table_r">
+                                <td class="table_d">Novadax</td>
+                                <td class="table_d">
+                                    $ 13.15
+                                    <img
+                                    class="table_img-trend"
+                                    src="./assets/icons/trending-down.svg"
+                                    alt="Bitcoin tendencia a la baja - Batatabit"
+                                    />
+                                </td>
+                            </tr>
+                            <tr class="table_r">
+                                <td class="table_d">Coinext</td>
+                                <td class="table_d">
+                                    $ 14.96
+                                    <img
+                                    class="table_img-trend"
+                                    src="./assets/icons/trending-down.svg"
+                                    alt="Bitcoin tendencia a la baja - Batatabit"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="table_update-date">
+                            <p class="table_text tac">
+                                <b class="table_bold">Actualizado:</b>
+                                19 Julio 23:48
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-
+        
         <div class="logo-separator"></div>
-      </section>
-      <section class="features">
+    </section>
+    <section class="features">
         <h2 class="features_subtitle tac">
-          Creamos un producto sin comparación.
+            Creamos un producto sin comparación.
         </h2>
-
+        
         <p class="features_text tac">
-          Confiable y diseñado para su uso diario.
+            Confiable y diseñado para su uso diario.
         </p>
-
+        
         <div class="features_boxs">
-          <div class="features_box">
-            <div class="features_icon">
-              <img
-                src="./assets/icons/clock.svg"
-                alt="Icono reloj - Batatabit"
-              />
+            <div class="features_box">
+                <div class="features_icon">
+                    <img
+                    src="./assets/icons/clock.svg"
+                    alt="Icono reloj - Batatabit"
+                    />
+                </div>
+                <h3 class="features_topic">Tiempo Real</h3>
+                <p class="features_description">
+                    Nuestro API toma información minuto a minuto sobre
+                    las tasas que más determinan el comportamiento.
+                </p>
             </div>
-            <h3 class="features_topic">Tiempo Real</h3>
-            <p class="features_description">
-              Nuestro API toma información minuto a minuto sobre las tasas que
-              más determinan el comportamiento.
-            </p>
-          </div>
-          <div class="features_box">
-            <div class="features_icon">
-              <img src="./assets/icons/eye.svg" alt="Icono ojo - Batatabit" />
+            <div class="features_box">
+                <div class="features_icon">
+                    <img
+                    src="./assets/icons/eye.svg"
+                    alt="Icono ojo - Batatabit"
+                    />
+                </div>
+                <h3 class="features_topic">No hay tasas escondidas</h3>
+                <p class="features_description">
+                    Ni en la compra o al momento de exit, Batabit
+                    siempre te muestra el costo real de lo que estás
+                    adquiriendo.
+                </p>
             </div>
-            <h3 class="features_topic">No hay tasas escondidas</h3>
-            <p class="features_description">
-              Ni en la compra o al momento de exit, Batabit siempre te muestra
-              el costo real de lo que estás adquiriendo.
-            </p>
-          </div>
-          <div class="features_box">
-            <div class="features_icon">
-              <img
-                src="./assets/icons/dollar-sign.svg"
-                alt="Icono signo de dolar Batatabit"
-              />
+            <div class="features_box">
+                <div class="features_icon">
+                    <img
+                    src="./assets/icons/dollar-sign.svg"
+                    alt="Icono signo de dolar Batatabit"
+                    />
+                </div>
+                <h3 class="features_topic">Compara monedas</h3>
+                <p class="features_description">
+                    No más rumores, con Babtabit sabrás el valor real de
+                    cada moneda en el mercado actual.
+                </p>
             </div>
-            <h3 class="features_topic">Compara monedas</h3>
-            <p class="features_description">
-              No más rumores, con Babtabit sabrás el valor real de cada moneda
-              en el mercado actual.
-            </p>
-          </div>
-          <div class="features_box">
-            <div class="features_icon">
-              <img
-                src="./assets/icons/check-circle.svg"
-                alt="Icono circulo aprovatorio - Batatabit"
-              />
+            <div class="features_box">
+                <div class="features_icon">
+                    <img
+                    src="./assets/icons/check-circle.svg"
+                    alt="Icono circulo aprovatorio - Batatabit"
+                    />
+                </div>
+                <h3 class="features_topic">Información confiable</h3>
+                <p class="features_description">
+                    Nuestras fuentes están 100% verificadas y
+                    continuamos auditando su contenido mientras se
+                    actualizan.
+                </p>
             </div>
-            <h3 class="features_topic">Información confiable</h3>
-            <p class="features_description">
-              Nuestras fuentes están 100% verificadas y continuamos auditando su
-              contenido mientras se actualizan.
-            </p>
-          </div>
         </div>
-      </section>
-      <section class="hero">
+    </section>
+    <section class="hero">
         <h2 class="hero_subtitle tac">Conócelo hoy.</h2>
-      </section>
-      <section class="prices">
+    </section>
+    <section class="prices">
         <h2 class="prices_subtitle tac" id="planes">
-          Escoge el plan que mejor se ajuste a ti.
+            Escoge el plan que mejor se ajuste a ti.
         </h2>
         <p class="prices_text tac">
-          Cualquier plan te da acceso completo a nuestra plataforma.
+            Cualquier plan te da acceso completo a nuestra plataforma.
         </p>
         
         <div class="prices_scroller">
-
-          <button class="prices_btn left" id="prices-btn-left"></button>
-          <button class="prices_btn right" id="prices-btn-right"></button>
-
-          <div class="prices_box-cards" id="prices-container">
-    
-            <div class="prices_cards">            
-  
-              <div class="prices_card">
-                <div class="prices_highlight">Básico</div>
-                <h3 class="prices_card-title">Pago Mensual</h3>
-                <p class="prices_amount-price">
-                  <span class="prices_dollar-sign">$</span>
-                  29
-                </p>
-                <p class="prices_description">*Ahorras $129 comparado al plan anual.</p>
-                <button class="prices_cta">Escoger este
-                  <img class="prices_btn-arrow" src="./assets/icons/orange-right-arrow.svg" alt="">
-                </button>
-              </div>
-              <div class="prices_card">
-                <div class="prices_highlight">Recomendado</div>
-                <h3 class="prices_card-title">Pago Anual</h3>
-                <p class="prices_amount-price">
-                  <span class="prices_dollar-sign">$</span>
-                  99
-                </p>
-                <p class="prices_description">*Ahorras $129 comparado al plan mensual.</p>
-                <button class="prices_cta">Escoger este
-                  <img class="prices_btn-arrow" src="./assets/icons/orange-right-arrow.svg" alt="">
-                </button>
-              </div>
-              <div class="prices_card">
-                <div class="prices_highlight">Popular</div>
-                <h3 class="prices_card-title">Pago Semestral</h3>
-                <p class="prices_amount-price">
-                  <span class="prices_dollar-sign">$</span>
-                  119
-                </p>
-                <p class="prices_description">*Ahorras $129 comparado al plan anual.</p>
-                <button class="prices_cta">Escoger este
-                  <img class="prices_btn-arrow" src="./assets/icons/orange-right-arrow.svg" alt="">
-                </button>
-              </div>
+            <button
+            class="prices_btn left"
+            id="prices-btn-left"
+            ></button>
+            <button
+            class="prices_btn right"
+            id="prices-btn-right"
+            ></button>
+            
+            <div class="prices_box-cards" id="prices-container">
+                <div class="prices_cards">
+                    <div class="prices_card">
+                        <div class="prices_highlight">Básico</div>
+                        <h3 class="prices_card-title">Pago Mensual</h3>
+                        <p class="prices_amount-price">
+                            <span class="prices_dollar-sign">$</span>
+                            29
+                        </p>
+                        <p class="prices_description">
+                            *Ahorras $129 comparado al plan anual.
+                        </p>
+                        <button class="prices_cta">
+                            Escoger este
+                            <img
+                            class="prices_btn-arrow"
+                            src="./assets/icons/orange-right-arrow.svg"
+                            alt=""
+                            />
+                        </button>
+                    </div>
+                    <div class="prices_card">
+                        <div class="prices_highlight">Recomendado</div>
+                        <h3 class="prices_card-title">Pago Anual</h3>
+                        <p class="prices_amount-price">
+                            <span class="prices_dollar-sign">$</span>
+                            99
+                        </p>
+                        <p class="prices_description">
+                            *Ahorras $129 comparado al plan mensual.
+                        </p>
+                        <button class="prices_cta">
+                            Escoger este
+                            <img
+                            class="prices_btn-arrow"
+                            src="./assets/icons/orange-right-arrow.svg"
+                            alt=""
+                            />
+                        </button>
+                    </div>
+                    <div class="prices_card">
+                        <div class="prices_highlight">Popular</div>
+                        <h3 class="prices_card-title">
+                            Pago Semestral
+                        </h3>
+                        <p class="prices_amount-price">
+                            <span class="prices_dollar-sign">$</span>
+                            119
+                        </p>
+                        <p class="prices_description">
+                            *Ahorras $129 comparado al plan anual.
+                        </p>
+                        <button class="prices_cta">
+                            Escoger este
+                            <img
+                            class="prices_btn-arrow"
+                            src="./assets/icons/orange-right-arrow.svg"
+                            alt=""
+                            />
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer_container">
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer_container">
         <div class="footer_links">
-          <a href="#" class="footer_link-item">Linkedin</a>
-          <a href="#" class="footer_link-item">Crunchbase</a>
-          <a href="#" class="footer_link-item">Hackernews</a>
+            <a href="#" class="footer_link-item">Linkedin</a>
+            <a href="#" class="footer_link-item">Crunchbase</a>
+            <a href="#" class="footer_link-item">Hackernews</a>
         </div>
         <div class="footer_logo">
-          <a href="#"><img src="./assets/img/logo-footer.svg" alt="Logo Footer - Babtabit"></a>
+            <a href="#">
+                <img
+                src="./assets/img/logo-footer.svg"
+                alt="Logo Footer - Babtabit"
+                />
+            </a>
         </div>
-      </div>
-    </footer>
-    <script src="./js/index.js"></script>
-  </body>
+    </div>
+</footer>
+<script src="./js/index.js"></script>
+</body>
 </html>
